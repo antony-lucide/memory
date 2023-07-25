@@ -1,7 +1,11 @@
- function Carte(props){
+import React from "react";
+
+function Carte(props){
     return(
-        <div>
-            <p>{props.text}</p>
+        <div className="carte" key={props.id}>
+            <div>
+                <img className="front" src={props.src} alt="Front-card"/>
+            </div>
         </div>
     )
  }
